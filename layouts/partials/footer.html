@@ -1,5 +1,5 @@
 		<div class="links">
-			<a href="/">Home</a>
+			<a href="{{ .Site.BaseURL }}">Home</a>
 			{{ range first 1 (where .Site.Pages "Type" "post") }}
 				<a href="/post/">Archive</a>
 			{{ end }}
